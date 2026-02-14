@@ -35,16 +35,23 @@ string generateKey(){
 }
 
 
-void generateKeys(int n) {
-    for (int i = 1; i <= n; i++) {
-        cout <<"Key " << i << ": " << generateKey() << endl;
+void generateKeys(string arr[100], int n) {
+    for (int i = 0; i <= n; i++) {
+        arr[i] = generateKey();
+    }
+}
+void printArray(string arr[100], int n) {
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << endl;
     }
 }
 int main(){
     srand(time(NULL));
-
-   generateKeys(readInput("num of keys"));
-
-
+    string keys[100];
+    int n = readInput("num of keys");
+    generateKeys(keys, n);
+    printArray(keys, n);
+    
+    
 
 }
