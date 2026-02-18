@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include "/Users/shamsafarany/Desktop/repos/Roadmap/Course_13/Project_2/clsQueue.h"
 using namespace std;
